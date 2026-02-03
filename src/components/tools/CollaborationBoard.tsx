@@ -1,14 +1,15 @@
 import { useState, useRef, useEffect } from 'react'
-import { motion } from 'framer-motion'
+
+
 import Card from '../ui/Card'
-import { Pen, Eraser, Square, Circle, Download, RotateCcw, Palette } from 'lucide-react'
+import { Pen, Eraser, Download, RotateCcw } from 'lucide-react'
 
 export default function CollaborationBoard() {
     const canvasRef = useRef<HTMLCanvasElement>(null)
     const [isDrawing, setIsDrawing] = useState(false)
     const [tool, setTool] = useState<'pen' | 'eraser'>('pen')
+    const [brushSize] = useState(2)
     const [color, setColor] = useState('#000000')
-    const [brushSize, setBrushSize] = useState(2)
 
     useEffect(() => {
         const canvas = canvasRef.current

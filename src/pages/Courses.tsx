@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import Card from '../components/ui/Card'
-import { BookOpen, Clock, User, PlayCircle } from 'lucide-react'
+import { Clock, User, PlayCircle } from 'lucide-react'
 import Button from '../components/ui/Button'
 
 const courses = [
@@ -61,8 +61,8 @@ export default function Courses() {
 
                                 <div className="flex items-center gap-2">
                                     <span className={`px-3 py-1 rounded-full text-xs font-medium ${course.enrolled
-                                            ? 'bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400'
-                                            : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400'
+                                        ? 'bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400'
+                                        : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400'
                                         }`}>
                                         {course.enrolled ? 'Enrolled' : 'Not Enrolled'}
                                     </span>

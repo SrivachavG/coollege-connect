@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { X, FileText, Download, Eye, Upload, Search, Filter, Star, ThumbsUp } from 'lucide-react'
-import Card from '../ui/Card'
+import { X, FileText, Download, Eye, Upload, Search, ThumbsUp } from 'lucide-react'
+
+
 import Button from '../ui/Button'
 import toast from 'react-hot-toast'
 

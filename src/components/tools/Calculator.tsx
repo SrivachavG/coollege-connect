@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Card from '../ui/Card'
-import { Delete, Divide } from 'lucide-react'
+
+
 
 const buttons = [
     ['C', '(', ')', '/'],

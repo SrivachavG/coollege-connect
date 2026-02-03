@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Card from '../ui/Card'
-import { Search, Book, Video, FileText, ExternalLink, PlayCircle } from 'lucide-react'
+import { Search, Book, Video, FileText, ExternalLink } from 'lucide-react'
 
 const resources = [
     {
@@ -65,8 +65,8 @@ export default function ResourceLibrary() {
                                 key={cat}
                                 onClick={() => setSelectedCategory(cat)}
                                 className={`px-3 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors ${selectedCategory === cat
-                                        ? 'bg-gray-900 dark:bg-white text-white dark:text-gray-900'
-                                        : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                                    ? 'bg-gray-900 dark:bg-white text-white dark:text-gray-900'
+                                    : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                                     }`}
                             >
                                 {cat}
@@ -89,8 +89,8 @@ export default function ResourceLibrary() {
                         >
                             <div className="flex items-start justify-between mb-3">
                                 <div className={`p-2 rounded-lg ${resource.type === 'video' ? 'bg-red-100 text-red-600' :
-                                        resource.type === 'pdf' ? 'bg-blue-100 text-blue-600' :
-                                            'bg-green-100 text-green-600'
+                                    resource.type === 'pdf' ? 'bg-blue-100 text-blue-600' :
+                                        'bg-green-100 text-green-600'
                                     }`}>
                                     {resource.type === 'video' ? <Video className="w-5 h-5" /> :
                                         resource.type === 'pdf' ? <Book className="w-5 h-5" /> :

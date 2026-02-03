@@ -24,6 +24,7 @@ export const useAuthStore = create<AuthStore>()(
 
             login: async (email: string, password: string) => {
                 // Simulate API call
+                console.log('Logging in with', email, password)
                 await new Promise(resolve => setTimeout(resolve, 1000))
 
                 // Demo login - accept any credentials
@@ -40,6 +41,7 @@ export const useAuthStore = create<AuthStore>()(
 
             signup: async (name: string, email: string, password: string, role: 'student' | 'teacher') => {
                 // Simulate API call
+                console.log('Signing up', email, password)
                 await new Promise(resolve => setTimeout(resolve, 1000))
 
                 const user: User = {

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Card from '../ui/Card'
-import { Folder, FileText, Upload, MoreVertical, Trash2, Download, Search } from 'lucide-react'
+import { Folder, FileText, Upload, Trash2, Download, Search } from 'lucide-react'
 import Button from '../ui/Button'
 import { format } from 'date-fns'
 
@@ -79,8 +79,8 @@ export default function FileManager() {
                 onDragOver={handleDrag}
                 onDrop={handleDrop}
                 className={`relative border-2 border-dashed rounded-xl p-8 text-center transition-colors mb-6 ${dragActive
-                        ? 'border-gray-900 dark:border-white bg-gray-50 dark:bg-gray-800'
-                        : 'border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500'
+                    ? 'border-gray-900 dark:border-white bg-gray-50 dark:bg-gray-800'
+                    : 'border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500'
                     }`}
             >
                 <Folder className="w-10 h-10 text-gray-400 mx-auto mb-3" />

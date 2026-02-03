@@ -1,0 +1,18 @@
+src/components/tools/Calculator.tsx(4,1): error TS6192: All imports in import declaration are unused.
+src/components/tools/CodeEditor.tsx(6,20): error TS6133: 'Play' is declared but its value is never read.
+src/components/tools/CollaborationBoard.tsx(2,1): error TS6133: 'motion' is declared but its value is never read.
+src/components/tools/CollaborationBoard.tsx(4,23): error TS6133: 'Square' is declared but its value is never read.
+src/components/tools/CollaborationBoard.tsx(4,31): error TS6133: 'Circle' is declared but its value is never read.
+src/components/tools/CollaborationBoard.tsx(4,60): error TS6133: 'Palette' is declared but its value is never read.
+src/components/tools/CollaborationBoard.tsx(11,23): error TS6133: 'setBrushSize' is declared but its value is never read.
+src/components/tools/CollegeResources.tsx(3,54): error TS6133: 'Filter' is declared but its value is never read.
+src/components/tools/CollegeResources.tsx(3,62): error TS6133: 'Star' is declared but its value is never read.
+src/components/tools/CollegeResources.tsx(4,1): error TS6133: 'Card' is declared but its value is never read.
+src/components/tools/FileManager.tsx(4,36): error TS6133: 'MoreVertical' is declared but its value is never read.
+src/components/tools/ResourceLibrary.tsx(4,55): error TS6133: 'PlayCircle' is declared but its value is never read.
+src/components/tools/UnitConverter.tsx(72,99): error TS2339: Property 'units' does not exist on type '{ name: string; units: { meter: number; kilometer: number; centimeter: number; millimeter: number; mile: number; yard: number; foot: number; inch: number; }; } | { name: string; units: { kilogram: number; gram: number; milligram: number; pound: number; ounce: number; }; } | { ...; } | { ...; }'.
+  Property 'units' does not exist on type '{ name: string; special: boolean; }'.
+src/components/ui/Button.tsx(1,10): error TS6133: 'ButtonHTMLAttributes' is declared but its value is never read.
+src/components/ui/Card.tsx(1,18): error TS6133: 'HTMLMotionProps' is declared but its value is never read.
+src/pages/Courses.tsx(3,10): error TS6133: 'BookOpen' is declared but its value is never read.
+src/pages/Login.tsx(7,60): error TS6133: 'Github' is declared but its value is never read.

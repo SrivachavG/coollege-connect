@@ -45,7 +45,7 @@ export default function UnitConverter() {
             return value.toFixed(2)
         }
 
-        const units = conversions[category].units as Record<string, number>
+        const units = (conversions[category] as any).units as Record<string, number>
         const baseValue = value / units[fromUnit]
         const result = baseValue * units[toUnit]
         return result.toFixed(6)
@@ -69,13 +69,13 @@ export default function UnitConverter() {
                         key={key}
                         onClick={() => {
                             setCategory(key as keyof typeof conversions)
-                            const units = key === 'temperature' ? ['celsius'] : Object.keys(value.units || {})
+                            const units = key === 'temperature' ? ['celsius'] : Object.keys((value as any).units || {})
                             setFromUnit(units[0])
                             setToUnit(units[1] || units[0])
                         }}
                         className={`px-4 py-2 rounded-lg font-medium transition-colors ${category === key
-                                ? 'bg-gray-900 dark:bg-white text-white dark:text-gray-900'
-                                : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                            ? 'bg-gray-900 dark:bg-white text-white dark:text-gray-900'
+                            : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                             }`}
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}

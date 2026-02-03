@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import Card from '../ui/Card'
 import Editor from '@monaco-editor/react'
 import { useThemeStore } from '../../store/useThemeStore'
-import { Download, Play } from 'lucide-react'
+import { Download } from 'lucide-react'
 
 const languages = ['javascript', 'python', 'java', 'cpp', 'html', 'css']
 
